@@ -3,7 +3,7 @@ const app = express();
 const apiRouter = require('./routes/apiRouter');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/mongof', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/mongoApiUsers', {useNewUrlParser: true});
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
